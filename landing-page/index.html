@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryzen-sys | WhatsApp Bot Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: rgba(255,255,255,0.06);
+      --text: #ffffff;
+      --muted: #94a3b8;
+      --primary: #22d3ee;
+    }
+
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #020617;
+      --muted: #475569;
+      --primary: #0284c7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      transition: 0.3s;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .toggle {
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: var(--card);
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 80px;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--primary);
+      color: #020617;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 16px;
+    }
+
+    section {
+      margin-top: 100px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .stack span {
+      display: inline-block;
+      margin: 6px 6px 0 0;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(34,211,238,0.15);
+      color: var(--primary);
+      font-size: 13px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .social a {
+      margin-right: 15px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    @media(max-width:768px){
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h2>Hanz.dev</h2>
+    <div class="toggle" onclick="toggleTheme()">🌙 / ☀️</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>WhatsApp Bot Developer</h1>
+      <p>
+        Developer bot WhatsApp berbasis Node.js (Baileys MD),
+        fokus automation, pairing code, dan jadi bot tanpa ribet.
+      </p>
+      <a href="#contact" class="btn">Hire / Contact</a>
+    </div>
+
+    <div class="card">
+      <h3>🤖 Tech Stack</h3>
+      <p>
+        Node.js • Baileys • REST API • Pairing Code • Multi Device
+      </p>
+      <div class="stack">
+        <span>Node.js</span>
+        <span>Baileys MD</span>
+        <span>Pairing Code</span>
+        <span>Automation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section>
+    <h2>🚀 Bot Showcase</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>🔐 Pairing Code</h3>
+        <p>
+          Login bot WhatsApp **tanpa scan QR**.
+          User cukup memasukkan nomor lalu menerima kode pairing langsung di WhatsApp.
+        </p>
+        <p>
+          ✔ Aman<br>
+          ✔ Cepat<br>
+          ✔ Cocok untuk user awam
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🤖 Jadi Bot</h3>
+        <p>
+          Mode **jadibot** memungkinkan user menjadikan akun WhatsApp mereka sebagai bot.
+        </p>
+        <p>
+          ✔ Tanpa install ulang<br>
+          ✔ Multi user<br>
+          ✔ Bisa on/off kapan saja
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Cara Kerja</h3>
+        <p>
+          1. Kirim perintah jadibot<br>
+          2. Masukkan pairing code<br>
+          3. Bot aktif otomatis<br>
+          4. Siap digunakan
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section>
+    <h2>🛠️ Service</h2>
+    <div class="card">
+      <p>
+        • Bot WhatsApp Custom<br>
+        • Pairing Code System<br>
+        • Jadibot System<br>
+        • Downloader & Tools<br>
+        • Deploy & Maintenance
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>📩 Contact</h2>
+    <form onsubmit="sendWA(event)">
+      <input type="text" id="name" placeholder="Nama" required>
+      <textarea id="message" rows="4" placeholder="Kebutuhan Bot / Jadibot" required></textarea>
+      <button class="btn" type="submit">Kirim via WhatsApp</button>
+    </form>
+
+    <div class="social" style="margin-top:20px;">
+      <a href="https://github.com/Ryzen-sys" target="_blank">GitHub</a>
+      <a href="https://wa.me/6283143694217" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ryzen-sys — WhatsApp Bot Developer
+  </footer>
+</div>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("light")
+  }
+
+  function sendWA(e) {
+    e.preventDefault()
+    const name = document.getElementById("name").value
+    const msg = document.getElementById("message").value
+    const phone = "6283143694217"
+    const url = `https://wa.me/${phone}?text=Halo, saya ${name}%0A${msg}`
+    window.open(url, "_blank")
+  }
+</script>
+
+</body>
+  </html>
+  
